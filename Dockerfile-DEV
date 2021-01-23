@@ -1,0 +1,7 @@
+FROM golang:1.16beta1-alpine3.13
+
+RUN go get -u github.com/cosmtrek/air
+
+WORKDIR /app
+
+COPY ./docker-entrypoint.sh .
